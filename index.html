@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh's Portfolio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--  Header -->
+    <header class="header">
+        <a href="" class="logo">Rishabh</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <img src="./code/moon.png" id="icon">
+
+        </nav>
+
+
+
+    </header>
+
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content" data-aos="fade-down">
+
+            <h1>Hello, I’m <span>Rishabh</span></h1>
+            <title>Text Typing Effect</title>
+
+            <body>
+                <div id="text-container" class="border"></div>
+            </body>
+            <br>
+            <br>
+            <p>
+
+                I am working on developing professional and visually engaging data science solutions, leveraging my
+                strong programming skills in Python and C++. I have completed impactful tech projects while also
+                nurturing my passion for technology that began in 8th grade. Currently pursuing a B.Tech in CSE with a
+                specialization in Data Science at Lovely Professional University, I am open to exciting opportunities in
+                data science projects, research, and connecting with industry professionals.
+
+
+            </p>
+
+            <div class="social-media">
+                <a href="https://github.com/Rishab195"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://www.linkedin.com/in/rishabhjn195/"><i class='bx bxl-linkedin'></i></a>
+                <!-- <a href=""><i class='bx bxl-facebook'></i></a> -->
+                <a href="https://www.instagram.com/rishab_jn195/?hl=en"><i class='fab fa-instagram'></i></a>
+                <!-- <a href="https://www.x.com/techbire"><i class='bx bxl-twitter'></i></a> -->
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=rishabjn195@gmail.com@gmail.com"><i
+                        class='bx bx-envelope'></i>
+            </div>
+
+            <div class="btn-container">
+                <a href="./code/CV2.pdf" class="btn" id="download-btn">Download CV</a>
+                <a href="#contact" class="btn" id="hire-me-btn">Hire Me</a>
+
+            </div>
+        </div>
+
+        <div class="home-img" data-aos="fade-down">
+            <img src="./code/profile.jpeg" alt="">
+        </div>
+    </section>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create three equal columns that float next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style for certification list */
+        .column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .column li {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .column a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .column a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img" data-aos="fade-left">
+            <img src="./code/Profile2.png" alt="">
+        </div>
+
+        <div class="about-content" data-aos="slide-left">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>I possess expertise as a Web Developer and have a deep enthusiasm for technology
+                that are both aesthetically pleasing and highly functional.
+                I am an expert in designing user-friendly and attractive interfaces. I am
+                proficient in a range of programming language including Python and C++. And have
+                experience with clients across a variety of industries.</p>
+
+            <div class="tab-titles" data-aos="fade-left">
+                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('certification')">Certification</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="experience">
+                <ul>
+                    <li><span>AI ML Intern EduFabrica</span><br>IIT Kanpur<br>Dec 2023 - Feb 2024</li>
+                    <li><span>Web Development Intern</span><br>Sudaku CodeClause Pvt Ltd,Vadgaon pune, India <br>Nov
+                        2023 - Dec 2023</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021-2022</span><br>Senior secondary education<br> 90.5% CBSE BOARD</li>
+                </ul>
+                <ul>
+                    <li><span>2022-Present</span><br> B.Tech (CSE)<br>Lovely Professional University</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="certification">
+                <div class="row">
+                    <div class="column">
+                        <ul>
+                            <li>
+                                <span>geeksforgeeks</span><br>
+                                Complete Machine Learning and Data Science<br>
+                                Issued July 2024<br>
+                                <a href="https://www.geeksforgeeks.org/certificate/3a4ab76f5be95e83b07c953ea3095d6f"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>coursera</span><br>
+                                The Bits and Bytes of Computer Networking<br>
+                                Issued Dec 2023<br>
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/4YUAF4P8FMTD"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>coursera</span><br>
+                                Programming in C++: A Hands-on Introduction<br>
+                                Issued Nov 2023<br>
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/FFK8ZQL4FCND"
+                                    target="_blank">Certificate</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>
+                                <span>MACQUARIE University</span><br>
+                                Excel Fundamentals for Data Analysis<br>
+                                Issued April 2024<br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/VPHAEK5T72J2"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>University of Colorado Boulder</span><br>
+                                Dynamic Programming, Greedy Algorithms<br>
+                                Issued April 2024<br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/CJ5M4PRUEJM3"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>Johns Hopkins University</span><br>
+                                R Programming<br>
+                                Issued May 2024<br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/KJEC33HJM54D"
+                                    target="_blank">Certificate</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>
+                                <span>IBM</span><br>
+                                Data Analysis with Python<br>
+                                Issued July 2023<br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/GSSZQ455AJBG"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>DeepLearning.AI</span><br>
+                                Generative AI with Large Language Models<br>
+                                Issued Apr 2024<br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/D7N54W5NK6P2"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>Reinventing Higher Education</span><br>
+                                Intelligence Tools for the Digital Age<br>
+                                Issued Mar 2023<br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/SM6QLQL2EUY9"
+                                    target="_blank">Certificate</a>
+                            </li>
+                        </ul>
+                    </div>
+    </section>
+
+
+    <!-- about section ends -->
+
+
+
+    <!-- Skills section -->
+    <section id="skills" class="services">
+        <div class="ser-title">
+            <h2 class="heading">My <span>Skills</span></h2>
+        </div>
+        <div class="services-box" data-aos="fade-left">
+            <div class="box" data-aos="fade-left">
+                <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Languages &nbsp; &nbsp;
+                </h2>
+                <div>
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://www.cprogramming.com" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/c.svg"
+                                alt="c" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>C</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://www.cplusplus.com" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/cplusplus.svg"
+                                alt="cplusplus" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>C++</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/Reference.html" target="_blank"
+                            rel="noreferrer">
+                            <img src="https://shorturl.at/akZWf" alt="cplusplus" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>Java</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                                alt="python" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>Python</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                            rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                                alt="javascript" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>JavaScript</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="" target="_blank" rel="noreferrer">
+                            <img src="https://shorturl.at/VxSAY" alt="javascript" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>SQL</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+
+                </div>
+            </div>
+
+            <div class="box" data-aos="slide-right">
+                <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Tools &Technologies &nbsp;
+                    &nbsp;</h2>
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://git-scm.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/git.svg"
+                            alt="git" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Git</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img src="https://img.icons8.com/?size=100&id=117561&format=png&color=000000" alt="linux"
+                            width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Excel</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://www.mysql.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                            alt="mysql" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>MySQL</b></figcaption>
+                </figure>
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://cloud.google.com" target="_blank" rel="noreferrer">
+                        <img src="https://img.icons8.com/?size=100&id=0JUBXbNc9AaZ&format=png&color=000000"
+                            alt="googlecloud" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Jupyter</b></figcaption>
+                </figure>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+                <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Libraries &nbsp; &nbsp;
+                </h2>
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://numpy.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/numpy.svg"
+                            alt="numpy" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>NumPy</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg"
+                            alt="pandas" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Pandas</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                            alt="nodejs" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Node.js</b></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- ======= End Skills Section ======= -->
+
+
+    <!-- projects section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Last <span>Projects</span></h2>
+        <div class="portfolio-container" data-aos="fade-right">
+
+            <div class="portfolio-card">
+
+                <img src="./code/Project1img.png" alt="">
+                <div class="portfolio-details" data-aos="fade-right">
+                    <h3>Tableau Dashboard<span></span></h3>
+                    <p>Dive into shipping trends with this Tableau dashboard. Explore delivery performance, regional
+                        metrics,
+                        and efficiency insights at a glance to optimize logistics and enhance customer satisfaction.</p>
+                </div>
+                <a href="" class="btn">View Project</a>
+            </div>
+
+            <div class="portfolio-card">
+
+                <img src="./code/project2.png" alt="" data-aos="fade-left">
+                <div class="portfolio-details" data-aos="fade-left">
+                    <h3>Amazon Clone<span></span></h3>
+                    <p>The Amazon Clone Landing Page project aims to replicate the core features and design of the
+                        Amazon
+                        website, providing users with a familiar and intuitive shopping experience. This project serves
+                        as a
+                        comprehensive exercise in front-end web development, focusing on creating a visually appealing
+                        and
+                        functional landing page.</p>
+                </div>
+                <a href="" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact info section -->
+    <section class="contact" id="contact">
+        <h2 class="heading"> Contact <span>Me <i class='bx bx-message-dots'></i></span></h2>
+
+        <form action="" method="POST">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="email" name="Email" placeholder="Email Address">
+            </div>
+
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </section>
+
+    <!--Footer section -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Made by Rishabh Jain copyright &copy; 2024 | All
+                Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
