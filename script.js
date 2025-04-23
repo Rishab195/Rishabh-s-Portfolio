@@ -51,10 +51,19 @@ var icon = document.getElementById("icon");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "./code/sun.png";
+    icon.src = "assets/sun.png";
   }
   else {
-    icon.src = "./code/moon.png";
+    icon.src = "assets/moon.png";
   }
 }
 
+const video = document.getElementById("video-cv");
+
+video.addEventListener("mouseenter", () => {
+  video.play();
+});
+
+video.addEventListener("mouseleave", () => {
+  video.pause();
+});
