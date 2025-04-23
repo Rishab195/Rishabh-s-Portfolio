@@ -20,19 +20,38 @@
 }
 
 :root {
-    --bg-color: #fff;
-    --seconde-bg-color: rgba(201, 207, 220, 0.933);
-    --text-color: #000;
+    --bg-color: #ffffff;
+    --seconde-bg-color: #d0d7e4;
+    --text-color: #111111;
 
-    --main-color: #fd4766;
-    --shadow-color: #808080;
+    --main-color: #e60039;
+    --shadow-color: #555555;
 }
 
 .dark-theme {
-    --text-color: white;
-    --bg-color: black;
-    --seconde-bg-color: rgb(50, 45, 33);
+    --text-color: #f5f5f5;
+    --bg-color: #121212;
+    --seconde-bg-color: #2c2c2c;
 }
+
+/* Dark mode text color styling for the portfolio section */
+.dark-theme .portfolio-card .portfolio-details p,
+.dark-theme .portfolio-card .portfolio-details h3 {
+    color: #ffffff;
+    /* Change the text color to white in dark mode */
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    /* Optional: add shadow for better readability */
+}
+
+/* Change the heading and paragraph text color specifically in the portfolio card */
+.dark-theme .portfolio-card .portfolio-details h3 {
+    color: black;
+}
+
+.dark-theme .portfolio-card .portfolio-details p {
+    color: black;
+}
+
 
 html {
     font-size: 62.5%;
@@ -59,7 +78,7 @@ section {
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
     z-index: 100;
 }
 
@@ -73,8 +92,6 @@ section {
     font-weight: 650;
     cursor: pointer;
 }
-
-
 
 .navbar a {
     font-size: 1.7rem;
@@ -99,15 +116,20 @@ section {
     align-items: center;
 }
 
-.home-img img {
-    width: 32vw;
-    transition: 0.3s ease;
+.video-cv {
+    width: 320px;
+    /* Adjust based on your design */
+    height: auto;
 
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    margin-left: -3cm;
 }
 
-.home-img img:hover {
+.video-cv:hover {
     transform: scale(1.05);
-
 }
 
 .home-content h3 {
@@ -122,11 +144,10 @@ section {
     text-transform: uppercase;
     letter-spacing: 4px;
     display: inline-block;
-
     background: linear-gradient(120deg,
             #1c99fe 20.69%,
             #7644ff 50.19%,
-            #fd4766 79.69%);
+            #e60039 79.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -185,7 +206,6 @@ span {
 .btn-container .btn {
     display: inline-block;
     margin: 0 2rem 0 0;
-
 }
 
 .btn {
@@ -226,9 +246,7 @@ span {
     transition: 0.3s ease;
     box-shadow: 3px 8px 6px #00000075;
     border-radius: 2%;
-
 }
-
 
 .about-img img:hover {
     transform: scale(1.05);
@@ -257,11 +275,9 @@ span {
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
-
 }
 
 .tab-links {
-
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -269,13 +285,11 @@ span {
     position: relative;
 }
 
-
 .tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #fd4766;
-    ;
+    background: #e60039;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -287,16 +301,12 @@ span {
 }
 
 .tab-contents ul li {
-    /* list-style: none; */
     margin: 10px 0;
-}
-
-.tab-contents ul li {
     font-size: small;
 }
 
 .tab-contents ul li span {
-    color: #ef306d;
+    color: #d40032;
     font-size: medium;
 }
 
@@ -309,20 +319,15 @@ span {
 }
 
 /**********************skills****************/
-
-
 .box {
-    background-color: rgba(201, 207, 220, 0.933);
+    background-color: var(--seconde-bg-color);
     padding: 23px;
     border-radius: 5px;
     width: 600px;
-    /* Adjust the width as needed */
     margin: 35px;
     transition: ease-in-out 0s;
     flex-wrap: wrap;
     display: flex;
-    background: var(--seconde-bg-color);
-
 }
 
 .services {
@@ -334,23 +339,17 @@ span {
 
 .services-box {
     padding-left: 24%;
-
 }
 
 .box img {
     transition: 0.3s ease;
     width: 50px;
-    /* Adjust the width as needed */
     height: 50px;
-
-
 }
 
 .box img:hover {
     transform: scale(1.22);
-
 }
-
 
 .box {
     transition: 0.3s ease;
@@ -379,20 +378,17 @@ span {
 
 .portfolio-container .portfolio-card {
     flex: 1 1 30rem;
-
     color: black;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
-
 }
 
 .portfolio-container .portfolio-card:hover {
     border: .2rem solid var(--main-color);
     transform: scale(1.02);
-
 }
 
 .portfolio-card h3 {
@@ -404,7 +400,6 @@ span {
     width: 80%;
     height: 50%;
     margin: 2rem 0;
-
 }
 
 .portfolio-details p {
@@ -417,6 +412,47 @@ span {
     margin-bottom: 10px;
 }
 
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.portfolio-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+.portfolio-card {
+    min-width: 300px;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
 
 /*************contact*********/
 .contact h2 {
@@ -459,8 +495,6 @@ span {
     margin-top: 2rem;
     cursor: pointer;
 }
-
-
 
 /******footer********/
 .footer {
@@ -540,7 +574,6 @@ span {
     }
 }
 
-
 @media (max-width:1048px) {
     .header {
         font-size: 32px;
@@ -548,7 +581,7 @@ span {
     }
 
     .navbar a {
-        margin-right: 20x;
+        margin-right: 20px;
         font-size: 17px;
     }
 }
